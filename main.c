@@ -292,15 +292,14 @@ void delete(){
         while(input != 1 && input != 2)  //If account does not exist, gives user option to try again or return to menu
              printf("\n\n\t\tThis account does not exist.\n\n\t\t Please press 1 to try again. \n\t\t Press 2 to return to the main menu.\n\n\t\t");
              scanf(" %d", &input);
-        }
-        if (input == 1)
-        {                   //Allowing user to decide to try a new acct number, or return to main menu
-            delete();
-        }
-        else if(input == 2)
-        {
-            menu();
-        }
+    }
+    if (input == 1)
+    {                   //Allowing user to decide to try a new acct number, or return to main menu
+        delete();
+    }
+    else if(input == 2)
+    {
+        menu();
     }
 }
 
